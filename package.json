@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
+    "@argos-ci/playwright": "^0.0.6",
     "@lmiller1990/janus": "^0.0.2",
     "globby": "^13.2.2",
     "playwright": "1.36"

@@ -1,15 +1,7 @@
-import { expect } from "@playwright/test";
-import { test } from "../fixture";
+import { argosScreenshot } from "@argos-ci/playwright";
+import { test } from "@playwright/test";
 
-test.beforeEach(async ({ page }) => {
-  await page.goto("https://playwright.dev/docs/api/class-test#test-after-each");
-});
-
-test("test 1", async ({ page, janus }, info) => {
-  await expect(
-    page.getByRole("heading", { name: "test.afterEach" })
-  ).toBeVisible();
-  console.log("Writing!!!")
-  await page.screenshot({ path: "bar123.png" });
-  await janus.snapshot({ name: 'foobar.png' });
+test("test 1", async ({ page }) => {
+  await page.goto("https://lmiller1990.github.io");
+  await argosScreenshot(page, "homepage");
 });
