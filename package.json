@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@lmiller1990/janus": "^0.0.2",
+    "globby": "^13.2.2",
+    "playwright": "1.36"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.36"
+  },
+  "scripts": {}
+}
