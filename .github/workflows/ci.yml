@@ -3,9 +3,9 @@ name: Argos
 on:
   push:
     # Argos has to run on your reference branch to creates reference builds
-    branches: [main]
+    branches: [main, testing]
   pull_request:
-    branches: [main]
+    branches: [main, testing]
 
 jobs:
   argos:
